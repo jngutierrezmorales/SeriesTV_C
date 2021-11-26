@@ -1,0 +1,26 @@
+﻿<Window x:Class="SeriesTV.ListaSeries"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SeriesTV" xmlns:dto="clr-namespace:SeriesTV.dto" d:DataContext="{d:DesignInstance Type=dto:Serie}"
+        mc:Ignorable="d"
+        Title="ListaSeries" Height="469" Width="548">
+    <Grid Margin="0,0,10,-6">
+        <DataGrid x:Name="DataGridSeries" ItemsSource="{Binding Path=listaSeries}" AutoGenerateColumns="False" Height="235" Margin="10,74,10,150">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="NOMBRE" Binding="{Binding Path=Nombre}"/>
+                <DataGridTextColumn Header="SINOPSIS" Binding="{Binding Path=Sinopsis}"/>
+                <DataGridTextColumn Header="FECHA ESTRENO" Binding="{Binding Path=FechaEstreno}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Menu Margin="10,10,10,381">
+            <MenuItem Header="Opciones" Click="MenuItem_Click">
+                <MenuItem x:Name="MenuItemAgregar" Header="Agregar nueva serie..."/>
+            </MenuItem>
+        </Menu>
+        <Button x:Name="ButtonModificar" Content="Modificar" Margin="0,314,10,95" Click="ButtonModificar_Click" HorizontalAlignment="Right" Width="123"/>
+        <Button x:Name="ButtonDescubrir" Content="DESCUBRIR" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" Width="185" Height="50" Background="#FFE8D900" FontWeight="Bold" FontSize="14" Click="ButtonDescubrir_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="SeriesTV.DialogoDescubrir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SeriesTV"
+        mc:Ignorable="d"
+        Title="DialogoDescubrir" Height="559" Width="600">
+    <Grid Margin="10,0,10,12">
+        <DataGrid x:Name="DataGridDescubrir" Height="497" VerticalAlignment="Center" HorizontalAlignment="Center" Width="540"/>
+        <Image x:Name="ImageJuegoCalamar" HorizontalAlignment="Left" Height="180" Margin="332,55,0,0" VerticalAlignment="Top" Width="120" Source="/imagenes/juegocalamar.jpg"/>
+        <Image x:Name="ImageHauntingHill" HorizontalAlignment="Left" Height="180" Margin="126,53,0,0" VerticalAlignment="Top" Width="120" Source="/imagenes/hauntinghill.jpg"/>
+        <Image x:Name="ImageMrRobot" HorizontalAlignment="Left" Height="180" Margin="124,236,0,0" VerticalAlignment="Top" Width="120" Source="/imagenes/mrrobot.jpg"/>
+        <Image x:Name="ImageTheWitcher" HorizontalAlignment="Left" Height="180" Margin="332,238,0,0" VerticalAlignment="Top" Width="120" Source="/imagenes/thewitcher.jpg"/>
+        <Button x:Name="ButtonAceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="214,443,0,0" VerticalAlignment="Top" Width="64" Click="ButtonAceptar_Click" Height="33"/>
+        <Button x:Name="ButtonCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="299,443,0,0" VerticalAlignment="Top" Width="66" Click="ButtonCancelar_Click" Height="33"/>
+
+    </Grid>
+</Window>

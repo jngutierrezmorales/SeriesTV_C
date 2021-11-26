@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="imagenes\hauntinghill.jpg" />
+    <None Remove="imagenes\juegocalamar.jpg" />
+    <None Remove="imagenes\mrrobot.jpg" />
+    <None Remove="imagenes\thewitcher.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="imagenes\hauntinghill.jpg" />
+    <Resource Include="imagenes\juegocalamar.jpg" />
+    <Resource Include="imagenes\mrrobot.jpg" />
+    <Resource Include="imagenes\thewitcher.jpg" />
+  </ItemGroup>
+
+</Project>

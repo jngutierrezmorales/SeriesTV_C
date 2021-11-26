@@ -1,0 +1,20 @@
+﻿<Window x:Class="SeriesTV.DialogoRegistrar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SeriesTV"
+        mc:Ignorable="d"
+        Title="DialogoRegistrar" Height="450" Width="620">
+    <Grid>
+        <DataGrid Margin="10,10,10,10"/>
+        <Label x:Name="LabelUsuario" Content="Usuario:" HorizontalAlignment="Left" Margin="90,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelPassword" Content="Contraseña:" HorizontalAlignment="Left" Margin="90,255,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelRegistrar" Content="Registrar Usuario" HorizontalAlignment="Left" Margin="126,52,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <TextBox x:Name="TextBoxUsuarioRegistrar" HorizontalAlignment="Left" Margin="204,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" Height="26"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="204,255,0,0" VerticalAlignment="Top" Width="320" Height="26"/>
+        <Button x:Name="ButtonAceptarRegistrar" Content="Aceptar" HorizontalAlignment="Left" Margin="340,315,0,0" VerticalAlignment="Top" Width="80" Height="33" Click="ButtonAceptarRegistrar_Click"/>
+        <Button x:Name="ButtonCancelarRegistrar" Content="Cancelar" HorizontalAlignment="Left" Margin="444,315,0,0" VerticalAlignment="Top" Width="80" Height="33" Click="ButtonCancelarRegistrar_Click"/>
+
+    </Grid>
+</Window>
